@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+  }
+  
+  body {
+    background-color: rgb(49, 47, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+  }
+  h3{
+    background: rgb(0, 153, 187);
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 5px;
+
+  }
+
+  
+  #calculadora {
+    width: 400px;
+    padding: 0.5em;
+    background-color: #0604a7;
+    color: rgb(8, 10, 9);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 8px;
+    box-shadow: rgb(0, 25, 101) 3px 3px;
+  }
+  
+  #calc h3 {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #666;
+  }
+  
+  #operacoes {
+    text-align: right;
+    border: 3px solid black;
+    border-radius: 7px;
+    margin-top: 5px;
+  }
+  
+  #previous-operacoes {
+    color: rgb(28, 28, 28);
+    background-color: #bababa;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    font-family: 'Silkscreen', cursive;
+    font-size: 1.2em;
+    
+  }
+  
+  #current-operacoes {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 100;
+    padding: 0.2em;
+    background: rgb(177, 176, 176);
+    overflow-wrap: break-word;
+    font-family: 'Silkscreen', cursive;
+  }
+  
+  #buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    margin-top: 8px;
+  }
+  
+  #buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: #dbdbdb;
+    cursor: pointer;
+    border:2px solid black;
+    border-radius: 10px;
+  }
+  
+  #buttons-container .numero {
+    background-color: #f3f3f3;
+  }
+  
+  #buttons-container button:hover {
+    background-color: #bababa;
+    border:  5px solid rgba(15, 15, 15, 0.912);
+  }
+  
+  #buttons-container #igual-btn {
+    grid-column: span 2;
+    background-color: #dbdbdb;
+  }
+  
+  #buttons-container #igual-btn:hover {
+    grid-column: span 2;
+    background-color: #dbdbdb;
+    border: solid 5px rgba(15, 15, 15, 0.912);
+    transition-delay: 0.5s;
+  
+  }
